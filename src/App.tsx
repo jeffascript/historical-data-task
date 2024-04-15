@@ -2,8 +2,19 @@ import { useMemo } from "react";
 
 import ChartViewer from "./components/ChartViewer";
 import { useGetHistoricalData } from "./hooks/useGetHistoricalData";
+import { interpolateMissingData } from "./utils/interpolateMissingData";
 
 function App() {
+  // memoised since objects are by reference
+  const dimensions = useMemo(
+    () => ({
+      width: 800,
+      height: 550,
+      margin: { top: 20, right: 50, bottom: 100, left: 100 },
+    }),
+    []
+  );
+
   /**  Ideally, how the Data would be fetched from the API **
    *
    *  const start = "2024-04-16T09:15:28.120Z";
@@ -15,18 +26,12 @@ function App() {
 
   const data = useGetHistoricalData("./src/sampleData/dummy-bess.json");
 
-  const dimensions = useMemo(
-    () => ({
-      width: 800,
-      height: 550,
-      margin: { top: 20, right: 50, bottom: 100, left: 100 },
-    }),
-    []
-  );
-
   if (!data) {
     return <div>Loading...</div>;
   }
+
+  // in-memory data splice
+  interpolateMissingData(data.series, 5000); // 5-second intervals.
 
   return (
     <>

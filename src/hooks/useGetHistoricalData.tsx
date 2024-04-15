@@ -14,6 +14,7 @@ export const useGetHistoricalData = (url: string) => {
           throw new Error("Failed to fetch data");
         }
         const jsonData = await response.json();
+
         setData(jsonData);
       } catch (error) {
         console.error("Error fetching data:", error);
