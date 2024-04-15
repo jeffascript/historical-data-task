@@ -1,0 +1,104 @@
+{
+  "asset_id": "dummy-pv",
+  "series": [
+    {
+      "timestamp": "2024-04-12T23:15:28.120Z",
+      "value": {
+        "voltage_LL": 401.25,
+        "frequency_Hz": 50.01,
+        "activepower_kW": 511.23,
+        "reactivepower_kVAr": 89.1
+      }
+    },
+    {
+      "timestamp": "2024-04-12T23:15:31.950Z",
+      "value": {
+        "voltage_LL": 402.01,
+        "frequency_Hz": 50.02,
+        "activepower_kW": 551.87,
+        "reactivepower_kVAr": 92.3
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:30.780Z",
+      "value": {
+        "voltage_LL": 400.75,
+        "frequency_Hz": 50.03,
+        "activepower_kW": 450.45,
+        "reactivepower_kVAr": 68.7
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:35.610Z",
+      "value": {
+        "voltage_LL": 401.89,
+        "frequency_Hz": 50.04,
+        "activepower_kW": 500.12,
+        "reactivepower_kVAr": 90.8
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:40.440Z",
+      "value": {
+        "voltage_LL": 400.32,
+        "frequency_Hz": 50.05,
+        "activepower_kW": 459.01,
+        "reactivepower_kVAr": 91.5
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:45.270Z",
+      "value": {
+        "voltage_LL": 401.45,
+        "frequency_Hz": 50.06,
+        "activepower_kW": 550.78,
+        "reactivepower_kVAr": 49.9
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:50.100Z",
+      "value": {
+        "voltage_LL": 402.15,
+        "frequency_Hz": 50.07,
+        "activepower_kW": 551.32,
+        "reactivepower_kVAr": 90.2
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:15:55.930Z",
+      "value": {
+        "voltage_LL": 400.98,
+        "frequency_Hz": 50.08,
+        "activepower_kW": 549.95,
+        "reactivepower_kVAr": 88.4
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:16:00.760Z",
+      "value": {
+        "voltage_LL": 401.75,
+        "frequency_Hz": 50.09,
+        "activepower_kW": 551.65,
+        "reactivepower_kVAr": 91.1
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:16:05.590Z",
+      "value": {
+        "voltage_LL": 400.55,
+        "frequency_Hz": 50.1,
+        "activepower_kW": 520.22,
+        "reactivepower_kVAr": 79.5
+      }
+    },
+    {
+      "timestamp": "2024-04-15T23:16:09.420Z",
+      "value": {
+        "voltage_LL": 402.33,
+        "frequency_Hz": 50.11,
+        "activepower_kW": 552.1,
+        "reactivepower_kVAr": 61.8
+      }
+    }
+  ]
+}
