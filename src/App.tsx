@@ -1,35 +1,88 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ChartViewerProps, Data } from "./types";
+
+const ChartViewer: React.FC<ChartViewerProps> = ({
+  historicalData,
+  dimensions,
+}) => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    if (canvasRef.current && historicalData && historicalData.length > 0) {
+      console.log("RUN now");
+      const ctx = canvasRef.current.getContext("2d");
+      if (ctx) {
+        console.log("RUN now !");
+      }
+    }
+  }, [dimensions, historicalData]);
+
+  return (
+    <div>
+      <canvas
+        ref={canvasRef}
+        width={dimensions.width}
+        height={dimensions.height}
+        id="canvas"
+      />
+    </div>
+  );
+};
+
+const useGetHistoricalData = (url: string) => {
+  const [data, setData] = useState<{
+    asset_id: string;
+    series: Array<Data>;
+  } | null>(null);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, [url]);
+  return data;
+};
 
 function App() {
-  const [count, setCount] = useState(0)
+  /**  Ideally, how the Data would be fetched from the API **
+   *
+   *  const start = "2024-04-16T09:15:28.120Z";
+   *  const end = new Date(Date.now()).toISOString();
+   *  const assetId = "dummy-bess";
+   *  const url = `/api/historical-data?asset_id=${assetId}&start=${start}&end=${end}`;
+   *  const data = useGetHistoricalData(url);
+   * ***/
+
+  const data = useGetHistoricalData("./src/data-dummy-bess.json");
+
+  const dimensions = useMemo(
+    () => ({
+      width: 800,
+      height: 550,
+      margin: { top: 20, right: 50, bottom: 100, left: 100 },
+    }),
+    []
+  );
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ChartViewer historicalData={data!.series} dimensions={dimensions} />;
     </>
-  )
+  );
 }
 
-export default App
+export default App;
