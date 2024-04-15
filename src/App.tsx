@@ -26,8 +26,14 @@ function App() {
 
   const data = useGetHistoricalData("./src/sampleData/dummy-bess.json");
 
+  console.log(data);
+
   if (!data) {
     return <div>Loading...</div>;
+  }
+
+  if (!data.series || data.series.length === 0) {
+    return <p>No Data to show</p>;
   }
 
   // in-memory data splice
