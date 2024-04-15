@@ -26,8 +26,6 @@ function App() {
 
   const data = useGetHistoricalData("./src/sampleData/dummy-bess.json");
 
-  console.log(data);
-
   if (!data) {
     return <div>Loading...</div>;
   }
