@@ -1,176 +1,176 @@
 {
-  "asset_id": "dummy-bess",
-  "series": [
-    {
-      "timestamp": "2024-04-12T23:15:30.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -234.76,
-        "reactivepower_kVAr": 28.7
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:15:35.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -230.52,
-        "reactivepower_kVAr": 30.1
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:15:40.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -220.63,
-        "reactivepower_kVAr": 31.8
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:15:45.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -225.81,
-        "reactivepower_kVAr": 29.9
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:15:50.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -228.95,
-        "reactivepower_kVAr": 28.4
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:15:55.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -231.07,
-        "reactivepower_kVAr": 27.2
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:16:00.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -220.47,
-        "reactivepower_kVAr": 32.5
-      }
-    },
+    "asset_id": "dummy-bess",
+    "series": [
+        {
+            "timestamp": "2024-04-12T23:15:30.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -234.76,
+                "reactivepower_kVAr": 28.7
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:15:35.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -230.52,
+                "reactivepower_kVAr": 30.1
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:15:40.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -220.63,
+                "reactivepower_kVAr": 31.8
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:15:45.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -225.81,
+                "reactivepower_kVAr": 29.9
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:15:50.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -228.95,
+                "reactivepower_kVAr": 28.4
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:15:55.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -231.07,
+                "reactivepower_kVAr": 27.2
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:16:00.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -220.47,
+                "reactivepower_kVAr": 32.5
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:16:05.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -222.81,
-        "reactivepower_kVAr": 33.2
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:16:10.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -219.45,
-        "reactivepower_kVAr": 31.5
-      }
-    },
-    {
-      "timestamp": "2024-04-12T23:16:15.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -217.09,
-        "reactivepower_kVAr": 30.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:16:05.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -222.81,
+                "reactivepower_kVAr": 33.2
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:16:10.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -219.45,
+                "reactivepower_kVAr": 31.5
+            }
+        },
+        {
+            "timestamp": "2024-04-12T23:16:15.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -217.09,
+                "reactivepower_kVAr": 30.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:16:50.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -227.09,
-        "reactivepower_kVAr": 35.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:16:50.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -227.09,
+                "reactivepower_kVAr": 35.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:16:55.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -197.09,
-        "reactivepower_kVAr": 31.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:16:55.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -197.09,
+                "reactivepower_kVAr": 31.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:00.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -187.09,
-        "reactivepower_kVAr": 33.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:17:00.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -187.09,
+                "reactivepower_kVAr": 33.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:05.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -177.09,
-        "reactivepower_kVAr": 34.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:17:05.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -177.09,
+                "reactivepower_kVAr": 34.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:10.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -167.09,
-        "reactivepower_kVAr": 35.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:17:10.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -167.09,
+                "reactivepower_kVAr": 35.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:15.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -157.09,
-        "reactivepower_kVAr": 36.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:17:15.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -157.09,
+                "reactivepower_kVAr": 36.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:20.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -147.09,
-        "reactivepower_kVAr": 37.3
-      }
-    },
+        {
+            "timestamp": "2024-04-12T23:17:20.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -147.09,
+                "reactivepower_kVAr": 37.3
+            }
+        },
 
-    {
-      "timestamp": "2024-04-12T23:17:25.710Z",
-      "value": {
-        "voltage_LL": 401.75,
-        "frequency_Hz": 50.09,
-        "activepower_kW": -137.09,
-        "reactivepower_kVAr": 38.3
-      }
-    }
-  ]
+        {
+            "timestamp": "2024-04-12T23:17:25.710Z",
+            "value": {
+                "voltage_LL": 401.75,
+                "frequency_Hz": 50.09,
+                "activepower_kW": -137.09,
+                "reactivepower_kVAr": 38.3
+            }
+        }
+    ]
 }
