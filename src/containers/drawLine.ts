@@ -16,23 +16,19 @@ export function drawLine(
   const startTime = new Date(series[0].timestamp).getTime();
   const endTime = new Date(series[series.length - 1].timestamp).getTime();
 
+  const activePowers = series.map((point) => point.value.activepower_kW);
+  const reactivePowers = series.map((point) => point.value.reactivepower_kVAr);
+
+  const powers = [...activePowers, ...reactivePowers];
+  const maxPower = Math.max(...powers);
+  const minPower = Math.min(...powers);
+
   series.forEach((point, index) => {
     const currentTimestamp = new Date(point.timestamp).getTime();
 
     const x = mapTimeToX(currentTimestamp, startTime, endTime, dimensions);
 
-    const y = mapPowerToY(
-      valueExtractor(point),
-      Math.min(
-        ...series.map((point) => point.value.activepower_kW),
-        ...series.map((point) => point.value.reactivepower_kVAr)
-      ),
-      Math.max(
-        ...series.map((point) => point.value.activepower_kW),
-        ...series.map((point) => point.value.reactivepower_kVAr)
-      ),
-      dimensions
-    );
+    const y = mapPowerToY(valueExtractor(point), minPower, maxPower, dimensions);
 
     if (index === 0) {
       ctx.moveTo(x, y);

@@ -15,7 +15,7 @@ function App() {
     []
   );
 
-  /**  Ideally, how the Data would be fetched from the API **
+  /**Ideally, this is how the Data would be fetched from the API **
    *
    *  const start = "2024-04-16T09:15:28.120Z";
    *  const end = new Date(Date.now()).toISOString();
@@ -31,7 +31,7 @@ function App() {
   }
 
   // in-memory data splice
-  interpolateMissingData(data.series, 5000); // 5-second intervals.
+  interpolateMissingData(data.series, 5000); // > 5-second intervals lag handler
 
   return (
     <>

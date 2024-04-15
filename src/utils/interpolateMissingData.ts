@@ -2,8 +2,8 @@ import { Data } from "../types";
 
 export function interpolateMissingData(series: Data[], expectedInterval: number) {
   for (let i = 1; i < series.length; i++) {
-    const prevTimestamp = new Date(series[i - 1].timestamp);
-    const currTimestamp = new Date(series[i].timestamp);
+    const prevTimestamp = new Date(series[i - 1].timestamp).getTime();
+    const currTimestamp = new Date(series[i].timestamp).getTime();
     const timeDiff = currTimestamp - prevTimestamp;
 
     // Check if there's a gap
@@ -19,7 +19,7 @@ export function interpolateMissingData(series: Data[], expectedInterval: number)
 
       // Create and insert interpolated data points
       for (let j = 1; j <= numMissing; j++) {
-        const newTimestamp = new Date(prevTimestamp.getTime() + j * expectedInterval);
+        const newTimestamp = new Date(prevTimestamp + j * expectedInterval);
         const interpolatedValue = {
           activepower_kW: series[i - 1].value.activepower_kW + j * activePowerStep,
           reactivepower_kVAr: series[i - 1].value.reactivepower_kVAr + j * reactivePowerStep,

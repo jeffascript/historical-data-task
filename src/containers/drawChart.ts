@@ -5,7 +5,7 @@ import { drawLine } from "./drawLine";
 
 export function drawChart(ctx: CanvasRenderingContext2D, data: Data[], dimensions: Dimensions) {
   const { width, height } = dimensions;
-  // Clear the canvas
+
   ctx.clearRect(0, 0, width, height);
   drawAxes(ctx, dimensions);
   drawAxeslabels(ctx, data, 15, dimensions);
